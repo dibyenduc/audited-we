@@ -1,0 +1,22 @@
+dibyendu@Dibyendus-MacBook-Pro audited-we % uv run python real_audit.py 1000 0 2530 2530
+W1114 09:49:15.271000 2002 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████████████████████████████████████████████████████████| 56/56 [00:00<00:00, 28353.58it/s]
+[transformers] GPTNeoForCausalLM LOAD REPORT from: roneneldan/TinyStories-33M
+Key                                                   | Status     |  | 
+------------------------------------------------------+------------+--+-
+transformer.h.{0, 1, 2, 3}.attn.attention.masked_bias | UNEXPECTED |  | 
+transformer.h.{0, 1, 2, 3}.attn.attention.bias        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+exact probability: 1.4225e-05
+probe: P(token 1 is a trigger) = 0.000e+00
+       P(token 2 is a trigger, token 1 not) = 1.977e-03; P(token 3 is a trigger | that) = 7.197e-03
+       with per_bin=2530: expected walkers entering bin 1 at step 2 = 5.00; expected hit walkers at step 3 if bin 1 is occupied = 18.21
+       suggestion: n0 = per_bin = about 2530
+WE  over 1000 runs: mean 1.526e-05 +/- 1.0e-06  (z vs exact = +1.00), zero-hit runs 531/1000
+MC  equal budget (3368 sequences/run): zero-hit runs 958/1000, mean 1.247e-05
+[120s elapsed]
+dibyendu@Dibyendus-MacBook-Pro audited-we %
+
