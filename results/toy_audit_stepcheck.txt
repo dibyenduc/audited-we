@@ -1,0 +1,14 @@
+honest transcripts accepted (k=2): 100/100
+attack forged estimate  detected: 100/100  (k=0 random checks)
+attack threshold swap   detected: 100/100  (k=0 random checks)
+attack seed re-roll     detected: 100/100  (k=0 random checks)
+mean (attacked estimate / truth): 2.64
+mid-run reweight attack (tamper at step 10, honest continuation)
+  k random steps | detected | theory k/(T-1)
+               0 |    0.0% |    0.0%
+               1 |    1.0% |    3.4%
+               2 |    6.0% |    6.9%
+               4 |    8.0% |   13.8%
+               8 |   28.0% |   27.6%
+              16 |   61.0% |   55.2%
+              28 |   96.0% |   96.6%

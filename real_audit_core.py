@@ -46,6 +46,10 @@ def run_log(cfg, next_topk, mode=None, x=0):
         if mode == "suppress" and t >= 2:
             for i in range(len(tk)):
                 if tk[i] in S and cnt[i] + 1 >= 2: tk[i] = FILLER; forged += 1
+        if mode == "irrelevant":
+            for i in range(len(tk)):
+                if cnt[i] >= 2 or (t == cfg["H"] and cnt[i] == 0):
+                    if tk[i] != FILLER: tk[i] = FILLER; forged += 1
         par, npre, ncnt, nw = resample(cfg, root, t, pre, cnt, w, tk)
         if mode == "boost" and t == cfg["H"]:
             nw = nw.copy(); nw[np.array(ncnt) >= 2] *= 10.0; nw /= nw.sum()

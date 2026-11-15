@@ -1,0 +1,4 @@
+trigger tokens: 40 [' Angry', ' Bad', ' Cry', ' Danger', ' Dark', ' Dragon', ' Fell', ' Fire', ' Hurt', ' Lost', ' Loud', ' Monster', ' Sad', ' Storm', ' angry', ' bad', ' cry', ' danger', ' dark', ' dragon', ' fell', ' fire', ' hurt', ' lost', ' loud', ' monster', ' sad', ' scared', ' scary', ' storm', 'bad', 'cry', 'danger', 'dark', 'dragon', 'fell', 'fire', 'lost', 'monster', 'storm']
+exact P(at least 2 of 3 generated tokens in trigger set) = 1.422490e-05
+model passes: 62, time: 1.0s
+saved exact_truth.json

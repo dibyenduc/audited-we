@@ -1,0 +1,9 @@
+torch 2.15.0 | threads 1 | prompt tokens 6
+TEST 1 same process, same input, bitwise equal: True
+probs digest (compare across separate runs): 08f0af3ba62d64b2
+TEST 2 sampled text: Once upon a time there was a duck. He loved to zoom around the sea and explore. He was so fast that the other animals couldn't catch him! 
+
+One day, something disturbed the sea - it was a
+token sequence digest (compare across separate runs): b5e2b1e9efd25e88
+TEST 3 speed: 12.9 ms per token (batch size 1)
+TEST 4 batch vs single, bitwise equal: True | max abs diff: 0.0

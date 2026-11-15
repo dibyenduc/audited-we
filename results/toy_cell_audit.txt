@@ -1,0 +1,10 @@
+honest accepted: 100/100
+weight-tamper (boost x10 at step 10) caught by bookkeeping alone: 100/100
+model-move cells in the log (N): about 1491
+fake-moves attack at step 10: x walkers get a forged up-move
+  x  | mean est/truth | m=0    | m=25   | m=50   | m=100  | m=200  | m=400  | m=800 
+   1 |           0.77 |     0% |     2% |     3% |     6% |    14% |    26% |    56%
+   2 |           0.88 |     0% |     0% |     6% |     7% |    26% |    45% |    69%
+   4 |           1.06 |     0% |     4% |     9% |    23% |    47% |    74% |    97%
+   8 |           1.70 |     0% |    22% |    32% |    36% |    72% |    92% |   100%
+  16 |           1.91 |     0% |    23% |    43% |    70% |    93% |   100% |   100%

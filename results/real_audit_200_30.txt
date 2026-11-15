@@ -1,0 +1,21 @@
+exact probability: 1.4225e-05
+probe: P(token 1 is a trigger) = 0.000e+00
+       P(token 2 is a trigger, token 1 not) = 1.977e-03; P(token 3 is a trigger | that) = 7.197e-03
+       with per_bin=2530: expected walkers entering bin 1 at step 2 = 5.00; expected hit walkers at step 3 if bin 1 is occupied = 18.21
+       suggestion: n0 = per_bin = about 2530
+WE  over 200 runs: mean 1.143e-05 +/- 1.9e-06  (z vs exact = -1.44), zero-hit runs 114/200
+MC  equal budget (3373 sequences/run): zero-hit runs 192/200, mean 1.186e-05
+[52s elapsed]
+
+AUDIT over 30 transcripts; model-move cells per transcript: about 10120
+honest accepted: 30/30
+weight-boost tamper caught by bookkeeping alone: 12/12 (transcripts with at least one hit)
+targeted INFLATION (1 forged move at step 2 to seed a chain, then x forged moves at step 3)
+   x | est>0 runs | mean est/exact | bookkeeping | m=0     | m=75    | m=379   | m=759   | m=1897  | m=3795 
+   1 |    30/30   |            1.0 |     0/30   |      0% |      0% |     10% |     10% |     30% |     60%
+   4 |    30/30   |            1.2 |     0/30   |      0% |      7% |     10% |     27% |     60% |     93%
+  16 |    30/30   |            2.0 |     0/30   |      0% |     17% |     57% |     77% |    100% |    100%
+  64 |    30/30   |            5.2 |     0/30   |      0% |     33% |     93% |    100% |    100% |    100%
+SUPPRESSION (hide every hit), on the 12 transcripts that had hits
+  bookkeeping caught: 0/12  | m=0: 0% | m=75: 17% | m=379: 42% | m=759: 33% | m=1897: 58% | m=3795: 42%
+[84s total]

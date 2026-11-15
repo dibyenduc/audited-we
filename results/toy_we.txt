@@ -1,0 +1,7 @@
+exact probability   : 7.278e-06
+budget (moves/run)  : 1518  -> MC uses 50 paths
+WE mean             : 6.444e-06 +/- 8.1e-07 (z vs truth = -1.03)
+WE relative std/run : 2.23
+MC runs with zero hits: 400 of 400
+WE runs with zero hits: 57 of 400
+mass conserved      : 1.000000000000

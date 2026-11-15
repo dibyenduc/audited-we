@@ -1,0 +1,5 @@
+transcripts with only event-irrelevant cells forged: 10 (about 1788 forged cells each)
+claimed estimate identical to the honest run:         10/10
+bookkeeping passes:                                    10/10
+feasibility-pruned audit accepts:                      10/10
+full replay of every cell flags the forgery:           10/10

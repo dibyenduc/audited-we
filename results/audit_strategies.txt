@@ -1,0 +1,9 @@
+transcripts: 30; per transcript about 10120 cells, 460 distinct prefixes in total
+event-relevant cells: about 7590 of them, needing about 53 distinct-prefix model passes
+honest accepted: 30/30, 30/30, 30/30
+
+strategy (same verifier cost, in model passes) | suppress | infl x=1 | infl x=4 | infl x=16
+feasibility-pruned (all relevant cells)      |     100%  |     100%   |     100%   |     100%  
+equal-cost uniform cells                     |     100%  |     100%   |     100%   |     100%  
+equal-cost uniform prefix groups             |       7%  |      40%   |      33%   |      23%  
+(suppression is scored on the 14 transcripts that had hits)  [68s]

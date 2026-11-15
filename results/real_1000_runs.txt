@@ -1,0 +1,8 @@
+exact probability: 1.4225e-05
+probe: P(token 1 is a trigger) = 0.000e+00
+       P(token 2 is a trigger, token 1 not) = 1.977e-03; P(token 3 is a trigger | that) = 7.197e-03
+       with per_bin=2530: expected walkers entering bin 1 at step 2 = 5.00; expected hit walkers at step 3 if bin 1 is occupied = 18.21
+       suggestion: n0 = per_bin = about 2530
+WE  over 1000 runs: mean 1.526e-05 +/- 1.0e-06  (z vs exact = +1.00), zero-hit runs 531/1000
+MC  equal budget (3368 sequences/run): zero-hit runs 958/1000, mean 1.247e-05
+[123s elapsed]
